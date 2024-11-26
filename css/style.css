@@ -1,0 +1,54 @@
+body {
+    background-color: #F7ECDE;
+}
+
+.w-110 {
+    width: 110%;
+}
+
+.h-35 {
+    height: 35%;
+}
+
+@font-face {
+    font-family: "pacifico";
+    src: url(../fonts/Pacifico.ttf);
+}
+
+.pacifico-regular {
+    font-family: "pacifico";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    color: rgb(53, 46, 40);
+}
+
+.headcaption {
+    background: linear-gradient(90deg, #3FA55C, #B1AB49);
+    background-clip: text;
+    color: transparent;
+}
+
+.caption::after {
+    content: "";
+    height: 20%;
+    width: 100%;
+    background-color: #FEC260;
+    position: absolute;
+    bottom: 0%;
+    right: 50%;
+    transform: translate(50%);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.caption:hover::after {
+    height: 70%;
+}
+
+.maincontent {
+    border-width: 2px 0 2px 0;
+    border-style: dotted;
+    border-color: #352e28;
+}
